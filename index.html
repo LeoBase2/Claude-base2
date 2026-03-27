@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeloAI — Casos de Teste com IA | MeloQA</title>
+  <meta name="description" content="Transforme Histórias de Usuário em Casos de Teste em Segundos com a Inteligência Artificial do MeloQA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="https://meloqa.com/" class="nav__logo">
+        <span class="logo-melo">Melo</span><span class="logo-qa">QA</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#formatos">Formatos</a>
+        <a href="#por-que">Por que MeloQA</a>
+        <a href="#cta" class="btn btn--sm btn--primary">Contratar Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="hero__particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__badge">
+        <span class="badge__dot"></span>
+        <span>MeloAI — Novo recurso</span>
+      </div>
+
+      <h1 class="hero__headline">
+        Transforme Histórias de Usuário<br />
+        em Casos de Teste<br />
+        <span class="gradient-text">em Segundos</span>
+      </h1>
+
+      <p class="hero__sub">
+        Pare de gastar horas analisando requisitos e escrevendo cenários manualmente. Com a
+        <strong>Inteligência Artificial do MeloQA</strong>, sua história de usuário se transforma
+        automaticamente em casos de teste estruturados e prontos para revisão.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#cta" class="btn btn--primary btn--lg">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Contratar Agora
+        </a>
+        <a href="#demo" class="btn btn--outline btn--lg">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 8l6 4-6 4V8z"/></svg>
+          Ver na Prática
+        </a>
+      </div>
+
+      <!-- TERMINAL MOCK -->
+      <div class="hero__terminal" id="demo">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">MeloAI · Geração de Casos de Teste</span>
+        </div>
+        <div class="terminal__body">
+          <div class="terminal__line terminal__line--prompt">
+            <span class="terminal__prompt">$</span>
+            <span class="terminal__cmd typing-effect">História de usuário: "Como usuário, quero fazer login com e-mail e senha"</span>
+          </div>
+          <div class="terminal__line terminal__line--info">
+            <span class="terminal__tag tag--ai">MeloAI</span>
+            <span>Analisando contexto e gerando cenários...</span>
+          </div>
+          <div class="terminal__spacer"></div>
+          <div class="terminal__block">
+            <div class="terminal__line terminal__line--label">
+              <span class="terminal__tag tag--bdd">BDD</span>
+              <span>Cenário: Login com credenciais válidas</span>
+            </div>
+            <div class="terminal__code">
+              <span class="code-keyword">Dado</span> que o usuário está na tela de login<br/>
+              <span class="code-keyword">Quando</span> preenche e-mail e senha válidos<br/>
+              <span class="code-keyword">Então</span> é redirecionado ao dashboard
+            </div>
+          </div>
+          <div class="terminal__block">
+            <div class="terminal__line terminal__line--label">
+              <span class="terminal__tag tag--neg">Negativo</span>
+              <span>Cenário: Login com senha incorreta</span>
+            </div>
+            <div class="terminal__code">
+              <span class="code-keyword">Dado</span> que o usuário está na tela de login<br/>
+              <span class="code-keyword">Quando</span> preenche senha inválida<br/>
+              <span class="code-keyword">Então</span> exibe mensagem de erro
+            </div>
+          </div>
+          <div class="terminal__line terminal__line--success">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span>7 casos de teste gerados · pronto para revisão</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROP -->
+  <section class="value" id="beneficios">
+    <div class="container">
+      <div class="section-label">Menos escrita. Mais qualidade.</div>
+      <h2 class="section-title">
+        Criar testes a partir de requisitos costuma ser<br />
+        uma das tarefas mais demoradas da sprint.
+      </h2>
+      <p class="section-sub">
+        Com o <strong>MeloAI</strong>, você informa o contexto e a IA gera automaticamente:
+      </p>
+
+      <div class="value__cards">
+        <div class="value__card">
+          <div class="card__icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3>Cenários completos de validação</h3>
+          <p>A IA cobre casos que humanos frequentemente esquecem, garantindo cobertura abrangente.</p>
+        </div>
+
+        <div class="value__card">
+          <div class="card__icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/></svg>
+          </div>
+          <h3>Fluxos positivos e negativos</h3>
+          <p>Geração automática do caminho feliz e dos cenários de exceção para cada história.</p>
+        </div>
+
+        <div class="value__card">
+          <div class="card__icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.8"/><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M14 17.5h7M17.5 14v7"/></svg>
+          </div>
+          <h3>Estrutura padronizada</h3>
+          <p>Todos os casos seguem o padrão configurado para o seu projeto, sem variações.</p>
+        </div>
+      </div>
+
+      <div class="value__highlight">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Sua equipe ganha tempo e mantém a qualidade desde o início.
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATS -->
+  <section class="formats" id="formatos">
+    <div class="container">
+      <div class="formats__inner">
+        <div class="formats__text">
+          <div class="section-label">Flexível para o seu processo</div>
+          <h2 class="section-title--left">
+            Não importa como seu time trabalha,<br />
+            o MeloAI se adapta.
+          </h2>
+          <p class="section-sub--left">
+            Gere casos de teste nos formatos que sua equipe já utiliza:
+          </p>
+
+          <ul class="formats__list">
+            <li class="formats__item">
+              <span class="format__badge format__badge--bdd">BDD</span>
+              <div>
+                <strong>BDD (Gherkin)</strong>
+                <p>Cenários em linguagem natural com Dado / Quando / Então.</p>
+              </div>
+            </li>
+            <li class="formats__item">
+              <span class="format__badge format__badge--step">Passo</span>
+              <div>
+                <strong>Resultado por passo</strong>
+                <p>Cada etapa com seu resultado esperado bem definido.</p>
+              </div>
+            </li>
+            <li class="formats__item">
+              <span class="format__badge format__badge--simple">Geral</span>
+              <div>
+                <strong>Resultado geral ou simplificado</strong>
+                <p>Ideal para testes exploratórios ou documentação rápida.</p>
+              </div>
+            </li>
+          </ul>
+
+          <p class="formats__note">
+            Revise, ajuste e salve tudo organizado diretamente no <strong>MeloQA</strong>.
+          </p>
+        </div>
+
+        <div class="formats__visual">
+          <div class="format__card format__card--active">
+            <div class="fcard__header">
+              <span class="fcard__tag fcard__tag--bdd">BDD · Gherkin</span>
+              <span class="fcard__status">
+                <span class="status__dot"></span> Gerado
+              </span>
+            </div>
+            <div class="fcard__code">
+              <div class="fcode__line"><span class="fcode--kw">Feature:</span> <span class="fcode--str">Login de usuário</span></div>
+              <div class="fcode__line fcode__line--indent"><span class="fcode--kw">Scenario:</span> <span class="fcode--str">Login bem-sucedido</span></div>
+              <div class="fcode__line fcode__line--indent2"><span class="fcode--kw">Given</span> usuário na tela de login</div>
+              <div class="fcode__line fcode__line--indent2"><span class="fcode--kw">When</span> insere credenciais válidas</div>
+              <div class="fcode__line fcode__line--indent2"><span class="fcode--kw">Then</span> acessa o dashboard</div>
+            </div>
+          </div>
+
+          <div class="format__card">
+            <div class="fcard__header">
+              <span class="fcard__tag fcard__tag--step">Resultado por Passo</span>
+            </div>
+            <div class="fcard__table">
+              <div class="ftable__row ftable__row--head">
+                <span>Passo</span><span>Ação</span><span>Resultado Esperado</span>
+              </div>
+              <div class="ftable__row">
+                <span>1</span><span>Abrir tela de login</span><span>Tela exibida</span>
+              </div>
+              <div class="ftable__row">
+                <span>2</span><span>Inserir e-mail</span><span>Campo aceito</span>
+              </div>
+              <div class="ftable__row">
+                <span>3</span><span>Inserir senha</span><span>Campo aceito</span>
+              </div>
+              <div class="ftable__row">
+                <span>4</span><span>Clicar em Entrar</span><span>Redireciona</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS GRID -->
+  <section class="benefits">
+    <div class="container">
+      <div class="section-label">O que muda na prática</div>
+      <h2 class="section-title">Impacto real no seu dia a dia</h2>
+
+      <div class="benefits__grid">
+        <div class="benefit__card benefit__card--highlight">
+          <div class="benefit__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Mais velocidade</h3>
+          <p>Reduza drasticamente o tempo gasto na criação de casos de teste. O que levava horas, agora leva segundos.</p>
+        </div>
+
+        <div class="benefit__card">
+          <div class="benefit__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>Padronização</h3>
+          <p>Todos os testes seguem a mesma estrutura, independente de quem gerou. Consistência garantida.</p>
+        </div>
+
+        <div class="benefit__card">
+          <div class="benefit__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h3>Rastreabilidade</h3>
+          <p>Histórico de gerações e contexto sempre disponível. Saiba exatamente quando e como cada caso foi criado.</p>
+        </div>
+
+        <div class="benefit__card">
+          <div class="benefit__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>Foco estratégico</h3>
+          <p>Seu time deixa a documentação repetitiva e passa a focar na qualidade real do produto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / WHY MELOQA -->
+  <section class="trust" id="por-que">
+    <div class="container">
+      <div class="trust__inner">
+        <div class="trust__content">
+          <div class="section-label">Por que confiar no MeloQA?</div>
+          <h2 class="section-title--left">
+            A inteligência de quem vive Qualidade de Software no dia a dia.
+          </h2>
+          <p class="section-sub--left">
+            O MeloQA não é apenas um software, é a plataforma oficial da
+            <strong>Base2 Tecnologia</strong>. Unimos décadas de experiência prática em projetos
+            críticos para criar uma ferramenta que resolve as dores reais de quem está na linha
+            de frente dos testes.
+          </p>
+
+          <div class="trust__badges">
+            <div class="trust__badge">
+              <div class="tbadge__icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <strong>Selo de Qualidade Base2</strong>
+                <p>Metodologia testada e aprovada em projetos reais.</p>
+              </div>
+            </div>
+
+            <div class="trust__badge">
+              <div class="tbadge__icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div>
+                <strong>Foco em Resultados</strong>
+                <p>Criado para entregar agilidade, controle e previsibilidade.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust__visual">
+          <div class="trust__logo-card">
+            <div class="tlogo__meloqa">
+              <span class="logo-melo">Melo</span><span class="logo-qa">QA</span>
+            </div>
+            <div class="tlogo__separator"></div>
+            <div class="tlogo__base2">
+              <span class="tlogo__powered">powered by</span>
+              <span class="tlogo__b2">Base2 Tecnologia</span>
+            </div>
+          </div>
+
+          <div class="trust__stats">
+            <div class="tstat">
+              <span class="tstat__number">+20</span>
+              <span class="tstat__label">anos de experiência em QA</span>
+            </div>
+            <div class="tstat__divider"></div>
+            <div class="tstat">
+              <span class="tstat__number">100%</span>
+              <span class="tstat__label">foco em qualidade de software</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="cta">
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="container cta__inner">
+      <div class="cta__badge">
+        <span class="badge__dot badge__dot--green"></span>
+        <span>MeloAI disponível agora</span>
+      </div>
+      <h2 class="cta__title">
+        Pronto para acelerar<br />seus testes?
+      </h2>
+      <p class="cta__sub">
+        Descubra como o <strong>MeloAI</strong> pode transformar a forma como sua equipe
+        trabalha com requisitos e validação.
+      </p>
+      <div class="cta__actions">
+        <a href="https://meloqa.com/" class="btn btn--primary btn--xl">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Experimente o MeloAI
+        </a>
+        <a href="https://meloqa.com/" class="btn btn--ghost btn--xl">
+          Veja como funciona na prática
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-melo">Melo</span><span class="logo-qa">QA</span>
+        <span class="footer__tagline">by Base2 Tecnologia</span>
+      </div>
+      <p class="footer__copy">
+        &copy; 2024 MeloQA · Base2 Tecnologia. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
