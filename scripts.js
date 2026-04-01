@@ -45,3 +45,32 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// Video modal
+const VIDEO_SRC = 'https://drive.google.com/file/d/1Yux6HpIsURmwbnVXiyZOmUidjcHXNkYy/preview';
+const modal      = document.getElementById('videoModal');
+const videoFrame = document.getElementById('videoFrame');
+
+function openModal() {
+  videoFrame.src = VIDEO_SRC;
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.hidden = true;
+  videoFrame.src = '';
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('[data-video-modal]').forEach(btn => {
+  btn.addEventListener('click', openModal);
+});
+
+document.querySelectorAll('[data-modal-close]').forEach(el => {
+  el.addEventListener('click', closeModal);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !modal.hidden) closeModal();
+});
